@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-coffee"></i></span>
+              <span class="title"><h2>Starling Cafe</h2></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-users"></i></span>
+              <span class="title">Customer</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-comment"></i></span>
+              <span class="title">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-question-circle"></i></span>
+              <span class="title">Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-lock"></i></span>
+              <span class="title">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle" onclick="toggleMenu();">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="search here" />
+              <i class="fas fa-search"></i>
+            </label>
+          </div>
+          <div class="user">
+            <img
+              src="https://img.icons8.com/bubbles/50/000000/admin-settings-male.png"
+            />
+          </div>
+        </div>
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,785</div>
+              <div class="cardName">Total Customers</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">270</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">8,7</div>
+              <div class="cardName">Rating</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-smile"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">$7,038</div>
+              <div class="cardName">Earning</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-coins"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Recent Oders</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Solo Espresso</td>
+                  <td>$7</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Machiato</td>
+                  <td>$20</td>
+                  <td>Paid</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Signature Coffee</td>
+                  <td>$20</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Americano</td>
+                  <td>$25</td>
+                  <td>Paid</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Capucinno Latte</td>
+                  <td>$25</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>V60</td>
+                  <td>$25</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Vietnam Drip</td>
+                  <td>$15</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Caramel Machiato</td>
+                  <td>$30</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Green Tea</td>
+                  <td>$15</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Orange Juice</td>
+                  <td>$15</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>French Fries</td>
+                  <td>$20</td>
+                  <td>Paid</td>
+                  <td><span class="status inprogress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Blue Ocean</td>
+                  <td>$15</td>
+                  <td>Paid</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Sausage</td>
+                  <td>$15</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Recent Customers</h2>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img1.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Sarah<br /><span>Medan</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img2.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Bagus<br /><span>Yogyakarta</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img3.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Dewi<br /><span>Palembang</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img4.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Stefani<br /><span>Makassar</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img5.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Bobi<br /><span>Jakarta</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img6.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Slamet<br /><span>Bantul</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img7.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Dewi<br /><span>Jakarta</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img8.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Wili<br /><span>Pontianak</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img9.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Putri<br /><span>Bandung</span></h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBx"><img src="./images/img10.jpg" /></div>
+                  </td>
+                  <td>
+                    <h4>Haris<br /><span>Sleman</span></h4>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleMenu() {
+        let toggle = document.querySelector(".toggle");
+        let navigation = document.querySelector(".navigation");
+        let main = document.querySelector(".main");
+        toggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
